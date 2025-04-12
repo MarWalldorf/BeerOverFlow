@@ -1,8 +1,8 @@
 #pragma once
 #include <string>
 using namespace std;
-
-class Skladnik {
+class Skladnik 
+{
 public:
     Skladnik(string nazwa, double ilosc, string jednostka);
     string pobierzOpis() const;
