@@ -78,6 +78,7 @@ void utworzReceptury(vector<shared_ptr<Receptura>>& receptury)
     receptury.push_back(apa);
 }
 // mozna dodawac swoje pozycje wedle uznania
+//rozbudowa do 16 pozycji 
 int main() 
 {
     setlocale(LC_ALL, "");
