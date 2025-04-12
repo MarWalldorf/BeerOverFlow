@@ -4,16 +4,19 @@ using namespace std;
 
 Receptura::Receptura(string nazwa) : nazwa(move(nazwa)) {}
 
-void Receptura::dodajSkladnik(const Skladnik& skladnik) {
+void Receptura::dodajSkladnik(const Skladnik& skladnik) 
+{
     skladniki.push_back(skladnik);
 }
 
-void Receptura::dodajEtap(const EtapProdukcji& etap) {
+void Receptura::dodajEtap(const EtapProdukcji& etap) 
+{
     etapy.push_back(etap);
 }
 
-void Receptura::wypiszRecepture() const {
-    cout << "Receptura: " << nazwa << "\n\nSk³adniki:\n";
+void Receptura::wypiszRecepture() const 
+{
+    cout << "Receptura: " << nazwa << "\n\nSkÂ³adniki:\n";
     for (const auto& s : skladniki)
         cout << " - " << s.pobierzOpis() << '\n';
 
@@ -22,6 +25,7 @@ void Receptura::wypiszRecepture() const {
         cout << " - " << e.pobierzOpis() << '\n';
 }
 
-string Receptura::pobierzNazwe() const {
+string Receptura::pobierzNazwe() const 
+{
     return nazwa;
 }
