@@ -77,7 +77,7 @@ void utworzReceptury(vector<shared_ptr<Receptura>>& receptury)
     apa->dodajEtap(EtapProdukcji("Fermentacja w 19°C", 10080));
     receptury.push_back(apa);
 }
-
+// mozna dodawac swoje pozycje wedle uznania
 int main() 
 {
     setlocale(LC_ALL, "");
