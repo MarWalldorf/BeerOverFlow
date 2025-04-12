@@ -83,20 +83,16 @@ int main()
 {
     setlocale(LC_ALL, "");
     cout << "Beer Overflow – Spowolnienie do perfekcji\n\n";
-
     vector<shared_ptr<Receptura>> receptury;
     utworzReceptury(receptury);
-
     cout << "Wybierz styl piwa:\n";
     for (size_t i = 0; i < receptury.size(); i++) 
     {
         cout << i + 1 << ". " << receptury[i]->pobierzNazwe() << '\n';
     }
-
     size_t wybor;
     cout << "\nPodaj numer stylu: ";
     cin >> wybor;
-
     if (wybor >= 1 && wybor <= receptury.size()) 
     {
         cout << "\nWybrana receptura:\n\n";
@@ -106,6 +102,5 @@ int main()
     {
         cout << "Niepoprawny wybór.\n";
     }
-
     return 0;
 }
