@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-class EtapProdukcji {
+class EtapProdukcji 
+{
 public:
     EtapProdukcji(string opis, int czasMinut);
     string pobierzOpis() const;
